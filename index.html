@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#FF7A00" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Treasure Tots" />
+  <title>Treasure Tots | Personalized Storybooks for Kids</title>
+  <meta name="description" content="Premium handmade storybooks where your child is the hero. Personalized gifts that nurture imagination and values.">
+  <link rel="canonical" href="https://treasuretots.com" />
+
+  <!-- Preconnect to external origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Preload critical fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="container header-container">
+      <div class="logo-wrapper">
+        <img src="./images/logo.png" alt="Treasure Tots Logo" class="logo" width="120" height="60" loading="eager" decoding="async" />
+        <span class="brand-name">Treasure Tots Creations</span>
+      </div>
+
+      <nav id="main-nav" aria-label="Main navigation" aria-expanded="false">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#storybooks" class="nav-link">Storybooks</a>
+        <a href="#other-books" class="nav-link">Learning & Devotion</a>
+        <a href="#customize" class="nav-link">Custom Shop</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact-section" class="nav-link">Contact</a>
+        <a href="#customize" class="nav-cta mobile-hidden">Create Your Book</a>
+      </nav>
+
+      <button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content fade-up">
+          <div class="badge">✨ Handmade & Personalized</div>
+          <h1>Stories Where Your Child is the <span class="highlight">Hero</span>.</h1>
+          <p>Turn your little one into the star of their own adventure. Beautifully illustrated, handmade storybooks designed to nurture imagination, culture, and values.</p>
+          <div class="hero-actions">
+            <a href="#customize" class="btn btn-primary">Personalize a Book</a>
+            <a href="#storybooks" class="btn btn-secondary">Explore Stories</a>
+          </div>
+          <div class="trust-signals-hero">
+            <span><i class="fas fa-star"></i> 4.9/5 Parent Ratings</span>
+            <span><i class="fas fa-check-circle"></i> 100% Custom Made</span>
+          </div>
+        </div>
+        <div class="hero-image fade-up delay-1">
+          <div class="image-frame">
+            <img src="./images/child-reading.jpg" alt="Child reading a personalized Treasure Tots book" width="600" height="400" loading="eager" decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <i class="fas fa-heart"></i>
+          <div>
+            <h4>Made with Love</h4>
+            <p>Handcrafted quality</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-user-check"></i>
+          <div>
+            <h4>Fully Personalized</h4>
+            <p>Name & photo inclusion</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shipping-fast"></i>
+          <div>
+            <h4>Fast Delivery</h4>
+            <p>Pan-India shipping</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="storybooks" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Our Story Collection</h2>
+          <p>From mythology to modern adventures, find the perfect tale for your tot.</p>
+        </div>
+
+        <div class="carousel-wrapper fade-up">
+          <button class="carousel-nav prev" id="sb-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+
+          <div class="carousel-track-container" id="storybooks-track-container" role="region" aria-label="Storybooks carousel">
+            <div class="carousel-track" id="storybooks-track">
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('dragonadventure', 0)">
+                    <img src="./images/Dragon Adventure1.jpg" alt="Dragon Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('dragonadventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Dragon Adventure</h3>
+                    <p class="card-desc">A magical journey of courage.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('lordrama', 0)">
+                    <img src="./images/Lord Rama1.jpg" alt="Lord Rama" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('lordrama', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Lord Rama</h3>
+                    <p class="card-desc">Timeless tales of virtue.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('krishna', 0)">
+                    <img src="./images/Krishna1.jpg" alt="Krishna" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('krishna', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Little Krishna</h3>
+                    <p class="card-desc">Playful stories of the divine.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('frozenprincess', 0)">
+                    <img src="./images/Frozen Princess1.jpg" alt="Frozen Princess" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('frozenprincess', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Frozen Princess</h3>
+                    <p class="card-desc">An icy adventure of sisterhood.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('spiderman', 0)">
+                    <img src="./images/Spiderman1.jpg" alt="Spiderman" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('spiderman', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Spiderman Hero</h3>
+                    <p class="card-desc">Action-packed web slinging.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+               <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('spaceadventure', 0)">
+                    <img src="./images/Space Adventure1.jpg" alt="Space Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('spaceadventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Space Adventure</h3>
+                    <p class="card-desc">Explore the galaxy.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('adaywithhanuman', 0)">
+                    <img src="./images/A day with Hanuman1.jpg" alt="A day with Hanuman" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('adaywithhanuman', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>A day with Hanuman</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('abhimanyu', 0)">
+                    <img src="./images/Abhimanyu1.jpg" alt="Abhimanyu" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('abhimanyu', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Abhimanyu</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('andal', 0)">
+                    <img src="./images/Andal1.jpg" alt="Andal Character" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('andal', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Andal Character</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('arjuna', 0)">
+                    <img src="./images/Arjuna1.jpg" alt="Arjuna" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('arjuna', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Arjuna</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('astronautadventure', 0)">
+                    <img src="./images/Astronaut Adventure1.jpg" alt="Astronaut Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('astronautadventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Astronaut Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('avengersadvanture', 0)">
+                    <img src="./images/Avengers Advanture1.jpg" alt="Avengers Advanture" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('avengersadvanture', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Avengers Advanture</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('balatripurasundari', 0)">
+                    <img src="./images/Bala Tripura sundari1.jpg" alt="Bala Tripura sundari" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('balatripurasundari', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Bala Tripura sundari</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('chatrapatishivajimaharaj', 0)">
+                    <img src="./images/Chatrapati Shivaji Maharaj1.jpg" alt="Chatrapati Shivaji Maharaj" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('chatrapatishivajimaharaj', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Chatrapati Shivaji Maharaj</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('cindrella', 0)">
+                    <img src="./images/Cindrella1.jpg" alt="Cindrella" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('cindrella', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Cindrella</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('cycleadventure', 0)">
+                    <img src="./images/Cycle Adventure1.jpg" alt="Cycle Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('cycleadventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Cycle Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('firefighter', 0)">
+                    <img src="./images/Firefighter1.jpg" alt="Firefighter" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('firefighter', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Firefighter</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('harrypotter', 0)">
+                    <img src="./images/Harry Potter1.jpg" alt="Harry Potter" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('harrypotter', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Harry Potter</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('hermionegranger', 0)">
+                    <img src="./images/Hermione Granger1.jpg" alt="Hermione Granger" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('hermionegranger', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Hermione Granger</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('icecrystaladventure', 0)">
+                    <img src="./images/Ice crystal Adventure1.jpg" alt="Ice crystal Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('icecrystaladventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Ice crystal Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('jijabai', 0)">
+                    <img src="./images/Jijabai1.jpg" alt="Jijabai" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('jijabai', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Jijabai</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('journeyoffutureblackbelt', 0)">
+                    <img src="./images/Journey Of Future Black Belt1.jpg" alt="Journey Of Future Black Belt" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('journeyoffutureblackbelt', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Journey Of Future Black Belt</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('lightningmcqueen', 0)">
+                    <img src="./images/Lightning MC Queen1.jpg" alt="Lightning MC Queen" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('lightningmcqueen', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Lightning MC Queen</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('lordshiva', 0)">
+                    <img src="./images/Lord Shiva1.jpg" alt="Lord Shiva" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('lordshiva', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Lord Shiva</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('magiclamp', 0)">
+                    <img src="./images/Magic lamp1.jpg" alt="Magic lamp" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('magiclamp', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Magic lamp</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('mermaid', 0)">
+                    <img src="./images/Mermaid1.jpg" alt="Mermaid" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('mermaid', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Mermaid</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('moanasadventure', 0)">
+                    <img src="./images/Moana's Adventure1.jpg" alt="Moana's Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('moanasadventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Moana's Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('mowglithejungleroar', 0)">
+                    <img src="./images/Mowgli-The Jungle Roar1.jpg" alt="Mowgli-The Jungle Roar" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('mowglithejungleroar', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Mowgli-The Jungle Roar</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('narutoadventure', 0)">
+                    <img src="./images/Naruto Adventure1.jpg" alt="Naruto Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('narutoadventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Naruto Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('navadurga', 0)">
+                    <img src="./images/Navadurga1.jpg" alt="Navadurga" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('navadurga', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Navadurga</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('policeofficer', 0)">
+                    <img src="./images/Police officer1.jpg" alt="Police officer" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('policeofficer', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Police officer</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('princessjijabai', 0)">
+                    <img src="./images/Princess Jijabai1.jpg" alt="Princess Jijabai" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('princessjijabai', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Princess Jijabai</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('raceradventure', 0)">
+                    <img src="./images/Racer Adventure1.jpg" alt="Racer Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('raceradventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Racer Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('radha', 0)">
+                    <img src="./images/Radha1.jpg" alt="Radha" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('radha', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Radha</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('ranirudramadevi', 0)">
+                    <img src="./images/Rani  Rudramadevi1.jpg" alt="Rani Rudramadevi" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('ranirudramadevi', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Rani Rudramadevi</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('seasurferer', 0)">
+                    <img src="./images/Sea surferer1.jpg" alt="Sea surferer" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('seasurferer', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Sea surferer</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('taekwondochampion', 0)">
+                    <img src="./images/Taekwondo Champion1.jpg" alt="Taekwondo Champion" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('taekwondochampion', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Taekwondo Champion</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('underwateradventure', 0)">
+                    <img src="./images/Underwater Adventure1.jpg" alt="Underwater Adventure" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('underwateradventure', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Underwater Adventure</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('unicornprincess', 0)">
+                    <img src="./images/Unicorn Princess1.jpg" alt="Unicorn Princess" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('unicornprincess', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Unicorn Princess</h3>
+                    <p class="card-desc">Personalized adventure story.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-nav next" id="sb-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="center mt-large">
+          <a href="#contact-section" class="btn btn-primary">Order a Storybook</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="customize" class="section bg-light">
+      <div class="container">
+        <div class="section-header center">
+          <h2>More Than Just Stories</h2>
+          <p>Personalize your child's world with our premium custom products.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="feature-card fade-up">
+            <div class="feature-img">
+              <img src="./images/wallpapers.jpg" alt="Custom Wallpapers" width="600" height="400" loading="lazy" decoding="async" onclick="openGallery('wallpaper', 0)" />
+            </div>
+            <div class="feature-content">
+              <h3>Custom Wallpapers</h3>
+              <p>Transform your walls with premium quality, vibrant prints tailored to your theme.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Durable material</li>
+                <li><i class="fas fa-check"></i> Personalized designs</li>
+                <li><i class="fas fa-check"></i> Professional finish</li>
+              </ul>
+              <button class="btn btn-outline" onclick="openGallery('wallpaper', 0)">View Designs</button>
+            </div>
+          </article>
+
+          <article class="feature-card fade-up delay-1">
+            <div class="feature-img">
+              <img src="./images/customised tags1.jpg" alt="Customised Tags Preview" width="600" height="400" loading="lazy" decoding="async" onclick="openGallery('customisedtags', 0)" />
+            </div>
+            <div class="feature-content">
+              <h3>Customised Tags</h3>
+              <p>Premium personalised name tags for school essentials, bottles, bags, and more. Designed to be durable, stylish, and uniquely yours.</p>
+               <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Book Labels & Bag Tags</li>
+                <li><i class="fas fa-check"></i> Custom Names</li>
+              </ul>
+              <button class="btn btn-outline" onclick="openGallery('customisedtags', 0)">View Samples</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="other-books" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Learning & Devotion</h2>
+          <p>Flashcards and activity books for growing minds.</p>
+        </div>
+
+        <div class="carousel-wrapper fade-up">
+          <button class="carousel-nav prev" id="ld-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+
+          <div class="carousel-track-container" id="other-books-track-container" role="region" aria-label="Learning products carousel">
+            <div class="carousel-track" id="other-books-track">
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up">
+                  <div class="card-image" onclick="openGallery('hanuman', 0)">
+                    <img src="./images/hanuman1.jpg" alt="Hanuman Chalisa" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('hanuman', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Hanuman Chalisa</h3>
+                    <p class="price">₹120/-</p>
+                    <p class="card-desc">Pocket book in English & Telugu.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up delay-1">
+                  <div class="card-image" onclick="openGallery('telugufc', 0)">
+                    <img src="./images/telugufc1.jpg" alt="Telugu Flashcards" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('telugufc', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Telugu Flashcards</h3>
+                    <p class="price">₹200/-</p>
+                    <p class="card-desc">Learn letters with fun illustrations.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up delay-2">
+                  <div class="card-image" onclick="openGallery('abc', 0)">
+                    <img src="./images/abc1.jpg" alt="English Alphabets Flashcards" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('abc', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>English Alphabets Flashcards</h3>
+                    <p class="price">₹250/-</p>
+                    <p class="card-desc">Bright, colorful learning cards.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up">
+                  <div class="card-image" onclick="openGallery('balamantra', 0)">
+                    <img src="./images/balamantra1.jpg" alt="Bala Mantra Book" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('balamantra', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Bala Mantra Book</h3>
+                    <p class="price">₹120/-</p>
+                    <p class="card-desc">Sacred chants for young minds.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up delay-1">
+                  <div class="card-image" onclick="openGallery('vemana', 0)">
+                    <img src="./images/vemana1.jpg" alt="Vemana Padyalu Book" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('vemana', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Vemana Padyalu Book</h3>
+                    <p class="price">₹100/-</p>
+                    <p class="card-desc">Timeless Telugu poetry.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up">
+                  <div class="card-image" onclick="openGallery('atoz', 0)">
+                    <img src="./images/ATOZ1.jpg" alt="English God's Flashcards" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('atoz', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>English God's Flashcards</h3>
+                    <p class="price">₹250/-</p>
+                    <p class="card-desc">Learn letters with divine illustrations.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card fade-up">
+                  <div class="card-image" onclick="openGallery('godsandcolor', 0)">
+                    <img src="./images/godsandcolor1.jpg" alt="Gods & Colors" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('godsandcolor', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Gods & Colors</h3>
+                    <p class="price">MRP- 100/- on sale 60/- each</p>
+                    <p class="card-desc">Vibrant divine illustrations.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('sanatana', 0)">
+                    <img src="./images/sanatana1.jpg" alt="Treasures of Sanatana" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('sanatana', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Treasures of Sanatana</h3>
+                    <p class="price">₹150/-</p>
+                    <p class="card-desc">Wisdom from ancient traditions.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="product-card">
+                  <div class="card-image" onclick="openGallery('kalyanam', 0)">
+                    <img src="./images/kalyanam1.jpg" alt="Srinivasa Kalyanam" width="280" height="350" loading="lazy" decoding="async" />
+                    <button class="gallery-trigger" aria-label="View Gallery" onclick="openGallery('kalyanam', 0)"><i class="fas fa-expand-alt"></i></button>
+                  </div>
+                  <div class="card-content">
+                    <h3>Srinivasa Kalyanam</h3>
+                    <p class="price">₹200/-</p>
+                    <p class="card-desc">The divine wedding tale.</p>
+                    <a href="#contact-section" class="btn btn-primary btn-order">Order Now</a>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="carousel-nav next" id="ld-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section bg-light">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Loved by Parents</h2>
+          <p>Join hundreds of happy families making memories.</p>
+        </div>
+
+        <div class="carousel-wrapper fade-up">
+
+          <button class="carousel-nav prev" id="reviews-prev" aria-label="Previous">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-track-container" id="reviews-track-container" role="region" aria-label="Customer reviews carousel">
+            <div class="carousel-track" id="reviews-track">
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Received the items... The quality is very nice.. All the items received are in good condition with proper packing.. Thanks dear.."</p>
+                <div class="reviewer">Happy Customer</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Hi sir, received the book... It is too good. He liked it very much.. Thank you so much ❤️❤️"</p>
+                <div class="reviewer">Satisfied Parent</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Received ma'am. Really beautiful and thank you ma'am. The photo feels real. It doesn't look like an animated or AI."</p>
+                <div class="reviewer">Verified Buyer</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Hi Akshatha, we received the book and we love it ❤️ 😍... looking forward to more!!!"</p>
+                <div class="reviewer">Returning Customer</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Wow amazing thank you so much 😊. We received the book and it's absolutely beautiful. The quality is great and the personalization is perfect. My son loved it! Highly recommend!"</p>
+                <div class="reviewer">Grateful Parent</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Thank you so much for the wonderful book we received. It turned out really well, and the quality is excellent it seems! We truly appreciate the effort and detail put into it. Looking forward to ordering again in the future!"</p>
+                <div class="reviewer">Happy Customer</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Thank you so much for delivering the book personally. It was great meeting you. Book quality is very good with images. I have been searching for Hanuman Chalisa book from many days. This book is so perfect. And affordable too."</p>
+                <div class="reviewer">Satisfied Buyer</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Thank you so much for the beautiful personalized Harry Potter book, ma'am. We received it just in time. He's flying back to the USA tomorrow morning, and he absolutely loved it. Incredible work. It truly made his day so special."</p>
+                <div class="reviewer">Grateful Parent</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Everyone in the house liked it a lot... mother was so excited. Nice work friend..., lot's of love. Keep shining with unique projects like this."</p>
+                <div class="reviewer">Satisfied Family</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Thanks alot, this was really a good story book. My daughter has liked alot and all her friends parents liked it and taken ur contact number, they will be calling you soon fr that to prepare customized story book."</p>
+                <div class="reviewer">Proud Parent</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"I gave my daughter 6 gifts on her 6th birthday. And guess what — the most favourite gift turned out to be a rangoli book. It's engaging and at the same time she is learning. We are really happy with the rangoli book. It was the least price compared to other gifts but the most used."</p>
+                <div class="reviewer">Proud Parent</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Hi @treasuretots, I bought your flashcards yesterday from Vinay Varanasi's Sundara Hanuman event stall that you arranged. They are really good."</p>
+                <div class="reviewer">Event Customer</div>
+              </div>
+
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Hi sorry I couldn't update you. I fell sick. My son loved the book. He was so happy."</p>
+                <div class="reviewer">Grateful Parent</div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="carousel-nav next" id="reviews-next" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="contact-cta">
+      <div class="container contact-wrapper fade-up">
+        <h2>Ready to Create Magic?</h2>
+        <p>Get in touch to customize your order. We are happy to answer any questions.</p>
+
+        <div class="contact-methods">
+          <a href="https://wa.me/918050640552" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+          <a href="tel:+918050640552" class="contact-btn phone">
+            <i class="fas fa-phone-alt"></i> +91 805 064 0552
+          </a>
+          <a href="https://instagram.com/treasuretots2025" target="_blank" rel="noopener noreferrer" class="contact-btn instagram">
+            <i class="fab fa-instagram"></i> @treasuretots2025
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrapper footer-logo">
+          <img src="./images/logo.png" alt="Treasure Tots Creations Logo" class="logo">
+          <span class="brand-name">Treasure Tots Creations</span>
+        </div>
+        <p>Creating magical, personalized stories that nurture values and imagination.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/treasuretots2025" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918050640552" aria-label="WhatsApp" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:treasuretots2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="#storybooks">Storybooks</a>
+        <a href="#customize">Wallpapers</a>
+        <a href="#other-books">Flashcards</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <a href="#contact-section">Contact Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Treasure Tots Creations. Handmade with ❤️.</p>
+    </div>
+  </footer>
+
+  <div id="image-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image gallery">
+    <div class="modal-content">
+      <button class="close-modal" id="modal-close" aria-label="Close gallery">&times;</button>
+      <div class="modal-body">
+        <button class="modal-nav prev" id="gallery-prev" aria-label="Previous image">&lt;</button>
+        <img id="gallery-img" src="" alt="Gallery Preview" decoding="async" />
+        <button class="modal-nav next" id="gallery-next" aria-label="Next image">&gt;</button>
+      </div>
+      <div class="modal-caption" id="gallery-counter"></div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/918050640552" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
